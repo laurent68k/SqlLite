@@ -12,6 +12,8 @@
 		EC5E29AC201B659700EBC6ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5E29AA201B659700EBC6ED /* Main.storyboard */; };
 		EC5E29AE201B659700EBC6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5E29AD201B659700EBC6ED /* Assets.xcassets */; };
 		EC5E29B1201B659700EBC6ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5E29AF201B659700EBC6ED /* LaunchScreen.storyboard */; };
+		EC5E29BA201B65F000EBC6ED /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5E29B9201B65F000EBC6ED /* libsqlite3.tbd */; };
+		EC5E29BD201B663400EBC6ED /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5E29BC201B663400EBC6ED /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EC5E29AD201B659700EBC6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC5E29B0201B659700EBC6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC5E29B2201B659700EBC6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5E29B9201B65F000EBC6ED /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EC5E29BC201B663400EBC6ED /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5E29BA201B65F000EBC6ED /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				EC5E29A5201B659700EBC6ED /* SqlLiteTest */,
 				EC5E29A4201B659700EBC6ED /* Products */,
+				EC5E29B8201B65F000EBC6ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		EC5E29A5201B659700EBC6ED /* SqlLiteTest */ = {
 			isa = PBXGroup;
 			children = (
+				EC5E29BB201B661700EBC6ED /* Classes */,
 				EC5E29A6201B659700EBC6ED /* AppDelegate.swift */,
 				EC5E29A8201B659700EBC6ED /* ViewController.swift */,
 				EC5E29AA201B659700EBC6ED /* Main.storyboard */,
@@ -62,6 +69,22 @@
 				EC5E29B2201B659700EBC6ED /* Info.plist */,
 			);
 			path = SqlLiteTest;
+			sourceTree = "<group>";
+		};
+		EC5E29B8201B65F000EBC6ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E29B9201B65F000EBC6ED /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5E29BB201B661700EBC6ED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E29BC201B663400EBC6ED /* DBManager.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5E29A9201B659700EBC6ED /* ViewController.swift in Sources */,
+				EC5E29BD201B663400EBC6ED /* DBManager.swift in Sources */,
 				EC5E29A7201B659700EBC6ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
